@@ -10,5 +10,9 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      USERNAME: ${{ vars.USERNAME }} # Variablesの参照
     steps:
       - run: echo "${{ inputs.greeting }}" # 入力パラメータ「greeting」の参照
+      - run: echo "${USERNAME}" # 入力パラメータ「greeting」の参照
+
