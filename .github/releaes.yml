@@ -7,3 +7,5 @@ changelog:
       labels:            # プルリクエストのラベルは複数定義できる
         - bug
         - fixes
+      authors:
+        - dependabot
